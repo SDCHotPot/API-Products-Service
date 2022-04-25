@@ -1,0 +1,31 @@
+{
+  "name": "api-products-service",
+  "version": "1.0.0",
+  "description": "SDC Products API Service",
+  "main": "server/index.js",
+  "scripts": {
+    "start-dev": "npx nodemon server/index.js -watch",
+    "start": "npx node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SDCHotPot/API-Products-Service.git"
+  },
+  "keywords": [
+    "Atelier",
+    "SDC",
+    "DBMS",
+    "products"
+  ],
+  "author": "Matthew Pak",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/SDCHotPot/API-Products-Service/issues"
+  },
+  "homepage": "https://github.com/SDCHotPot/API-Products-Service#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "pg": "^8.7.3"
+  }
+}
