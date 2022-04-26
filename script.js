@@ -12,7 +12,7 @@ export const options = {
 }
 
 export default function () {
-  const res = http.get('http://localhost:3500/products/5000/styles');
+  const res = http.get(`http://localhost:3500/products/${Math.floor(Math.random() * 1000000)}/styles`);
   check(res, { 'status was 200' : (r) => r.status === 200 });
   sleep(1);
 }
